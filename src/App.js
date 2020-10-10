@@ -1,6 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+// Firebase App (the core Firebase SDK) is always required and
+// must be listed before other Firebase SDKs
+var firebase = require("firebase/app");
+
+// Add the Firebase products that you want to use
+require("firebase/auth");
+require("firebase/firestore");
 
 function App() {
   return (
@@ -9,6 +16,9 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <p> 
+          Woah
         </p>
         <a
           className="App-link"
@@ -19,7 +29,9 @@ function App() {
           Learn React
         </a>
       </header>
+
     </div>
+
   );
 }
 
